@@ -1,0 +1,77 @@
+.navbar {
+    background-color: var(--dark-color);
+    color: white;
+    padding: 16px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand-logo {
+    font-size: 24px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.brand-logo:hover {
+    transform: scale(1.05);
+}
+
+.navbar-links {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.user-info {
+    font-size: 14px;
+    margin-right: 8px;
+}
+
+.nav-button {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.nav-button:hover {
+    background-color: white;
+    color: var(--dark-color);
+}
+
+.nav-button.primary-btn {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.nav-button.primary-btn:hover {
+    background-color: white;
+    color: var(--dark-color);
+}
+
+.nav-button.logout-btn {
+    color: #ef4444;
+    border-color: #ef4444;
+}
+
+.nav-button.logout-btn:hover {
+    background-color: #ef4444;
+    color: white;
+}

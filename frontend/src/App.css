@@ -1,0 +1,130 @@
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.error-message {
+    background-color: #fee2e2;
+    border: 1px solid #fca5a5;
+    color: #dc2626;
+    padding: 12px 16px;
+    border-radius: 6px;
+    margin-bottom: 16px;
+}
+
+.success-message {
+    background-color: #dcfce7;
+    border: 1px solid #86efac;
+    color: #16a34a;
+    padding: 12px 16px;
+    border-radius: 6px;
+    margin-bottom: 16px;
+}
+
+.loading {
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 18px;
+    color: #6b7280;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    font-size: 14px;
+    font-family: inherit;
+    transition: border-color 0.3s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.status {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.status.open {
+    background-color: #dcfce7;
+    color: #16a34a;
+}
+
+.status.closed {
+    background-color: #fee2e2;
+    color: #dc2626;
+}
+
+.status.on-hold {
+    background-color: #fef3c7;
+    color: #b45309;
+}
+
+.status.applied {
+    background-color: #dbeafe;
+    color: #1e40af;
+}
+
+.status.reviewed {
+    background-color: #f3e8ff;
+    color: #7e22ce;
+}
+
+.status.shortlisted {
+    background-color: #dcfce7;
+    color: #16a34a;
+}
+
+.status.rejected {
+    background-color: #fee2e2;
+    color: #dc2626;
+}
+
+.status.accepted {
+    background-color: #dcfce7;
+    color: #16a34a;
+}
